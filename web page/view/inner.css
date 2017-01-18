@@ -1,0 +1,14 @@
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.bold{
+  font-size: 30px;
+}
+.size{
+  font-weight: bold;
+}
+.crk2{
+  height: 450px;
+}

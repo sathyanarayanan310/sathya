@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="">
+Top 3 Players:
+<select ng-model="myVar">
+  <option value="sachin">sachin
+  <option value="Virat Kohli">Virat
+  <option value="Msd">Msd
+</select>
+<hr>
+<div ng-switch="myVar">
+  <div ng-switch-when="sachin">
+     <h1>Sachin Tendulkar</h1>
+     <p>Sachin Ramesh Tendulkar (born 24 April 1973) is a former Indian cricketer and captain, widely regarded as one of the greatest batsmen of all time.[4] He took up cricket at the age of eleven, made his Test debut on 15 November 1989 against Pakistan in Karachi at the age of sixteen, and went on to represent Mumbai domestically and India internationally for close to twenty-four years. He is the only player to have scored one hundred international centuries, the first batsman to score a double century in a One Day International, the holder of the record for the number of runs in both ODI and Test cricket, and the only player to complete more than 30,000 runs in international cricket</p>
+  </div>
+  <div ng-switch-when="Virat Kohli">
+     <h1>Virat Kohli</h1>
+     <p>Virat Kohli (born 5 November 1988) is an Indian international cricketer who currently captains the Indian cricket team. A right-handed batsman often regarded as one of the best batsmen in the world,[2] Kohli was ranked eighth in ESPN's list of world's most famous athletes in 2016.[3] He plays for the Royal Challengers Bangalore in the Indian Premier League (IPL), and has been the team's captain since 2013./p>
+  </div>
+  <div ng-switch-when="Msd">
+     <h1>MSD</h1>
+     <p>Mahendra Singh Dhoni commonly known as M.S.Dhoni (born 7 July 1981) is an Indian cricketer who captained the Indian team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014. An attacking right-handed middle-order batsman and wicket-keeper, he is widely regarded as one of the greatest finishers in limited-overs cricket.[2][3][4][5] He made his One Day International (ODI) debut in December 2004 against Bangladesh, and played his first Test a year later against Sri Lanka.</p>
+  </div>
+  <div ng-switch-default>
+     <h1>Switch</h1>
+     <p>Select topic from the dropdown, to switch the content of this DIV.</p>
+  </div>
+</body>
+</html>
